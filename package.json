@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "precommit": "pretty-quick --staged",
     "start": "rm -rf .cache/caches/gatsby-plugin-mdx && gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prettier": "prettier --write ."

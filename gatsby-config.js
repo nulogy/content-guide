@@ -2,8 +2,9 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "nulogy.design",
+    title: "Nulogy Content Guide",
   },
+  pathPrefix: "/content-guide"
   plugins: [
     {
       resolve: `gatsby-plugin-webfonts`,
