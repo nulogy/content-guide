@@ -85,7 +85,7 @@ const Navigation = ({ location }) => {
             <>
               {menuItem.links.map((menuLink) => {
                 const selected =
-                  menuLink.name === findMatchingPath(location?.pathname)?.name;
+                  menuLink.href === findMatchingPath(location?.pathname)?.href;
                 return (
                   <Text key={menuLink.href}>
                     <NavigationLink
