@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Nulogy Content Guide",
   },
-  pathPrefix: "/content-guide"
+  pathPrefix: "/content-guide",
   plugins: [
     {
       resolve: `gatsby-plugin-webfonts`,
