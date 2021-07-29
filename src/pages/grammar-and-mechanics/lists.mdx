@@ -1,0 +1,101 @@
+import { Box, Flex, List, ListItem, Text } from "@nulogy/components";
+import { COPY_WIDTH } from "../../components/CONSTANTS.js";
+
+# Lists
+
+Lists can be either ordered or unordered. Ordered lists (numbered points 1, 2, 3…) are used if the list provides instructions to follow. All other lists should be unordered. No matter the type of list you are writing, it should include a lead in sentence to provide context.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <NoExample>
+      <List fontSize="small" mt="x2">
+        <ListItem>Click the "assign pallets" link.</ListItem>
+        <ListItem>Choose a work order.</ListItem>
+        <ListItem>Review pallets to be assigned.</ListItem>
+        <ListItem>Click the "assign" button</ListItem>
+      </List>
+    </NoExample>
+  </Box>
+  <Box>
+    <YesExample>
+      <Text fontSize="small" mt="x2">
+        To assign pallets through item locator:
+      </Text>
+      <List fontSize="small" listStyle="order">
+        <ListItem>To assign pallets through item locator:</ListItem>
+        <ListItem>Choose a work order.</ListItem>
+        <ListItem>Review pallets to be assigned.</ListItem>
+        <ListItem>Click the "assign" button</ListItem>
+      </List>
+    </YesExample>
+  </Box>
+</Flex>
+
+If a list item is a full sentence, then it should include proper punctuation. List items that are sentence fragments should not include punctuation.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <NoExample>
+      <Text fontSize="small" mt="x2">
+        Attachment information includes:
+      </Text>
+      <List fontSize="small" mt="x2">
+        <ListItem>File name;</ListItem>
+        <ListItem>Upload date;</ListItem>
+        <ListItem>Description.</ListItem>
+      </List>
+    </NoExample>
+  </Box>
+  <Box>
+    <YesExample>
+      <Text fontSize="small" mt="x2">
+        Attachment information includes:
+      </Text>
+      <List fontSize="small" mt="x2">
+        <ListItem>File name</ListItem>
+        <ListItem>Upload date</ListItem>
+        <ListItem>Description</ListItem>
+      </List>
+    </YesExample>
+  </Box>
+</Flex>
+
+When three or more items are listed in a sentence we use the Oxford comma, which means that we include a comma before the “and” (e.g. This content guide includes sections on voice, tone, and grammar).
+
+<NoExample>
+  This content guide includes section on voice, tone and grammar.
+</NoExample>
+<YesExample mb="x4">
+  This content guide includes sections on voice, tone, and grammar.
+</YesExample>
+
+Lists can vary in format, but all items within the same list should match format. For example, all sentence fragments, all beginning with a verb, all the same length.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <NoExample>
+      <Text fontSize="small" mt="x2">
+        Use Nulogy's Operational Solution to report on:
+      </Text>
+      <List fontSize="small" mt="x2">
+        <ListItem>
+          Inventory adjustments made by individual staff members.
+        </ListItem>
+        <ListItem>Item reservation</ListItem>
+        <ListItem>Review labor on a job.</ListItem>
+      </List>
+    </NoExample>
+  </Box>
+  <Box>
+    <YesExample>
+      <Text fontSize="small" mt="x2">
+        Use Nulogy's Operational Solution to report on:
+      </Text>
+      <List fontSize="small" mt="x2">
+        <ListItem>Inventory adjustments</ListItem>
+        <ListItem>Item reservations</ListItem>
+        <ListItem>Labor</ListItem>
+      </List>
+    </YesExample>
+  </Box>
+</Flex>

@@ -1,0 +1,94 @@
+import { Box, Checkbox, Flex, PrimaryButton } from "@nulogy/components";
+import { COPY_WIDTH } from "../../components/CONSTANTS.js";
+
+# Web elements
+
+## Buttons and links
+
+Both buttons and links should be written in sentence case.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <NoExample>
+    <PrimaryButton>Manage Picking</PrimaryButton>
+  </NoExample>
+  <YesExample>
+    <PrimaryButton>Manage picking</PrimaryButton>
+  </YesExample>
+</Flex>
+
+Button text begins with an imperative verb that describes the action that will be taken (e.g. Assign pallets). Where possible, the verb should be followed by a descriptive noun.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <NoExample>
+    <PrimaryButton>More actions</PrimaryButton>
+  </NoExample>
+  <YesExample>
+    <PrimaryButton>View more actions</PrimaryButton>
+  </YesExample>
+</Flex>
+
+Links inform the user of where they will be directed to when they click. Always use descriptive links. Never refer to a link in body copy then provide a link labelled “link”.
+
+A good rule is to make the link text the heading of the page to which it navigates.
+
+<NoExample>
+  <a href="#">Click here</a> to view the move transaction report for this job.
+</NoExample>
+<YesExample>
+  View the <a href="#">move transaction report</a> for this job.
+</YesExample>
+
+## Site settings
+
+Nulogy’s Operational Solution has many site settings that allow both our customer and internal Nulogy users to customize the experience for a given site. In order to help site setting users to easily navigate and understand the various customizable settings, we employ certain rules when writing a new site setting.
+
+If the setting is a checkbox (as is most common), start the label with a verb. This will help the user to know what happens when the setting is enabled.
+
+<NoExample>
+  <Checkbox
+    labelText="Default print pallet tags when adding production"
+    className="inline"
+  />
+</NoExample>
+
+<YesExample>
+  <Checkbox
+    labelText="Default print pallet tags when adding production"
+    className="inline"
+  />
+</YesExample>
+
+Common verbs for site settings are allow, enable, restrict, and require. A setting that takes any of these actions should always use these verbs. No synonyms.
+
+- <strong>Allow</strong> refers to a setting that permits an action that is usually
+  restricted.
+- <strong>Enable</strong> refers to a setting that adds a new function to the interface.
+- <strong>Restrict</strong> refers to a setting that blocks an action that is usually
+  allowed.
+- <strong>Require</strong> refers to a setting that creates a mandate.
+
+If the setting is a form field or a dropdown, verbs are not required. These instances should be treated like a regular label and should describe the form field effectively.
+
+Site setting labels should be kept as succinct as possible. Especially when the repercussions of a site setting is complex, it can be easy to want to write in detail. Any setting that needs elaboration should employ tooltips. In general, a site setting label should not exceed 50 characters at absolute maximum. If possible, try to cap the label at 3-4 words.
+
+<NoExample>
+  <Checkbox
+    labelText="Require specifying lot and expiries for rejects that Track-by-Job"
+    className="inline"
+  />
+</NoExample>
+
+<YesExample>
+  <Checkbox
+    labelText="Require lots and expiries for track by job rejects"
+    className="inline"
+  />
+</YesExample>
+
+Tooltips can be longer to allow for expansion on complex concepts. Site setting tooltips should always be present tense and be complete sentences.
+
+## Tooltips
+
+Tooltip text should always be kept short and to the point. If your message cannot be said in one or two sentences, then alternate informational methods should be considered.
+
+Tooltips may be used to expand on text that has been truncated, or to provide quick instruction or elaboration. If it contains a full sentence, it should include proper punctuation. If it is a sentence fragment or expansion, no punctuation should be used.
