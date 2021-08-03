@@ -3,7 +3,6 @@ import {
   Box,
   Branding,
   List,
-  StatusIndicator,
   Text,
   theme,
 } from "@nulogy/components";

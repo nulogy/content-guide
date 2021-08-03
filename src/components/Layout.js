@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import Navigation from "./Navigation";
 import Transition from "./Transition";
 import MenuButton from "./MenuButton";
+import PageNavigation from "./PageNavigation";
 import Helmet from "./Helmet";
 
 const ForceThingsToBeInline = createGlobalStyle`
@@ -28,6 +29,7 @@ const Layout = ({ children, location, noPadding }) => {
               paddingX={noPadding ? null : { extraSmall: "x6", medium: "x8" }}
             >
               <Box mb="x6">{children}</Box>
+              <PageNavigation location={location} />
             </Box>
           </Transition>
         </Box>

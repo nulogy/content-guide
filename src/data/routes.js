@@ -7,6 +7,7 @@ export const routes = [
     links: [
       {
         name: "Overview",
+        title: "Voice and tone",
         href: "/voice-and-tone/overview",
       },
       {
@@ -65,6 +66,7 @@ export const routes = [
     links: [
       {
         name: "Overview",
+        title: "Writing for translation",
         href: "/writing-for-translation/overview",
       },
       {
