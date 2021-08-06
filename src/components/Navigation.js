@@ -98,11 +98,25 @@ const Navigation = ({ location }) => {
                     </NavigationLink>
                   </Text>
                 );
-              })}
+              })}              
             </>
           </List>
-        </Box>
+        </Box>    
       ))}
+      <Box mb="x6">
+          <NavigationHeading>Nulogy Design System</NavigationHeading>
+          <List pl="0">
+            <Text>
+              <NavigationLink
+                variants={variants}
+                whileHover="hover"
+                href="https://nulogy.design"
+              >
+                Back to nulogy.design
+              </NavigationLink>
+            </Text>             
+          </List>   
+        </Box>       
     </>
   );
 };
