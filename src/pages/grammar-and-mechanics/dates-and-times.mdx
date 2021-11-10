@@ -1,3 +1,6 @@
+import { Flex, Box, Text } from "@nulogy/components";
+import { COPY_WIDTH } from "../../components/CONSTANTS.js";
+
 # Dates and times
 
 ## Dates
@@ -6,3 +9,62 @@ Formatting dates and times can be tricky because the standards differ from count
 The ISO (International Organization for Standardization) states that the international standard is YYYY-MM-DD. This standard is not adopted in every single country around the world, but it does offer us the safest route to ensure that the dates listed in our applications are easy to read.
 
 Given that the ISO date format is not fully adopted worldwide, Nulogy goes a step further to ensure that dates are understandable with no margin for misinterpretation. In order to avoid users confusing the two digits that represent the month and the two digits to represent the day, we represent the month in their MLA abbreviated form:
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <strong>January</strong> - Jan
+    </Text>
+    <Text>
+      <strong>February</strong> - Feb
+    </Text>
+    <Text>
+      <strong>PO</strong> - purchase order
+    </Text>
+    <Text>
+      <strong>JIT</strong> - just in time
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <strong>FIFO</strong> - first in, first out
+    </Text>
+    <Text>
+      <strong>SSCC</strong> - serial shipping container code
+    </Text>
+    <Text>
+      <strong>BOL</strong> - bill of lading
+    </Text>
+    <Text>
+      <strong>UOM</strong> - unit of measure
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <strong>FIFO</strong> - first in, first out
+    </Text>
+    <Text>
+      <strong>SSCC</strong> - serial shipping container code
+    </Text>
+    <Text>
+      <strong>BOL</strong> - bill of lading
+    </Text>
+    <Text>
+      <strong>UOM</strong> - unit of measure
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <strong>FIFO</strong> - first in, first out
+    </Text>
+    <Text>
+      <strong>SSCC</strong> - serial shipping container code
+    </Text>
+    <Text>
+      <strong>BOL</strong> - bill of lading
+    </Text>
+    <Text>
+      <strong>UOM</strong> - unit of measure
+    </Text>
+  </Box>
+</Flex>
