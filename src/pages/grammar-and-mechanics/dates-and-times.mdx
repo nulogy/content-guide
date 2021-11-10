@@ -19,52 +19,62 @@ Given that the ISO date format is not fully adopted worldwide, Nulogy goes a ste
       <strong>February</strong> - Feb
     </Text>
     <Text>
-      <strong>PO</strong> - purchase order
-    </Text>
-    <Text>
-      <strong>JIT</strong> - just in time
+      <strong>March</strong> - Mar
     </Text>
   </Box>
   <Box>
     <Text>
-      <strong>FIFO</strong> - first in, first out
+      <strong>April</strong> - Apr
     </Text>
     <Text>
-      <strong>SSCC</strong> - serial shipping container code
+      <strong>May</strong> - May
     </Text>
     <Text>
-      <strong>BOL</strong> - bill of lading
-    </Text>
-    <Text>
-      <strong>UOM</strong> - unit of measure
+      <strong>June</strong> - June
     </Text>
   </Box>
   <Box>
     <Text>
-      <strong>FIFO</strong> - first in, first out
+      <strong>July</strong> - July
     </Text>
     <Text>
-      <strong>SSCC</strong> - serial shipping container code
+      <strong>August</strong> - Aug
     </Text>
     <Text>
-      <strong>BOL</strong> - bill of lading
-    </Text>
-    <Text>
-      <strong>UOM</strong> - unit of measure
+      <strong>September</strong> - Sept
     </Text>
   </Box>
   <Box>
     <Text>
-      <strong>FIFO</strong> - first in, first out
+      <strong>October</strong> - Oct
     </Text>
     <Text>
-      <strong>SSCC</strong> - serial shipping container code
+      <strong>November</strong> - Nov
     </Text>
     <Text>
-      <strong>BOL</strong> - bill of lading
-    </Text>
-    <Text>
-      <strong>UOM</strong> - unit of measure
+      <strong>December</strong> - Dec
     </Text>
   </Box>
 </Flex>
+
+For example, November 4th, 2021 would read as 2021-Nov-04. July 28th, 2025 would read as 2025-Jul-28. 
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>2023-06-03</NoExample>
+    </Text>
+    <Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>2023-June-03</YesExample>
+    </Text>
+  </Box>
+  <Box>
+</Flex>
+
+Dates appearing in a sentence are one of two exceptions to this formatting rule. They are written out in full to ensure our overall voice remains professional and understandable. Month abbreviations are not used.
+
+<NoExample>Join us for Nulogy xChange, beginning 2021-Oct-19.</NoExample>
+<YesExample>Join us for Nulogy xChange, beginning on October 19th, 2021.</YesExample>
