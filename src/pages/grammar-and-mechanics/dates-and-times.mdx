@@ -64,17 +64,77 @@ For example, November 4th, 2021 would read as 2021-Nov-04. July 28th, 2025 would
     <Text>
       <NoExample>2023-06-03</NoExample>
     </Text>
-    <Text>
   </Box>
   <Box>
     <Text>
       <YesExample>2023-June-03</YesExample>
     </Text>
   </Box>
-  <Box>
 </Flex>
 
 Dates appearing in a sentence are one of two exceptions to this formatting rule. They are written out in full to ensure our overall voice remains professional and understandable. Month abbreviations are not used.
 
 <NoExample>Join us for Nulogy xChange, beginning 2021-Oct-19.</NoExample>
 <YesExample>Join us for Nulogy xChange, beginning on October 19th, 2021.</YesExample>
+
+## Expiry Dates
+Expiry dates are another exception to the date formatting rule. These standards are often set by brands or suppliers, requiring customization on the part of the user. As such, expiry date formats can be configured by the user in their settings.
+
+## Times
+The ISO standard for representing time is HH:MM:SS (hour:minute:second). This is a format that is recognized internationally. Where countries differ is on the use of the 12 hour clock or the 24 hour clock. English speaking countries tend to lean towards the 12 hour clock, but have an understanding of the 24 hour clock. This is why Nulogy adopts the 24 hour clock as the standard. Our default formatting drops the use of the seconds from the ISO formatting, as that information does not add value to our customers in most cases. However, they can be added in situations that benefit the user.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>12:30:43</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>12:30</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+In some of our applications, we offer the user the option to specify the use of the 12 hour clock in their settings. In this case a capitalized AM or PM is added onto the HH:MM after a space.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>7:36p.m.</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>7:36 PM</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+If a time zone is required, the three letter abbreviation is added after the time, separated by a space. Where possible, the user’s local time is used as the default with no time zone specified.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>18:12 ET</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>18:12 EST</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>4:29 MST PM</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>4:29 PM MST</YesExample>
+    </Text>
+  </Box>
+</Flex>
