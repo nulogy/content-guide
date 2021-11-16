@@ -138,3 +138,80 @@ If a time zone is required, the three letter abbreviation is added after the tim
     </Text>
   </Box>
 </Flex>
+
+## Dates and times
+When a date and time are listed together, we list the date first, followed by the time.
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>23:11; 2023-May-20</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>2023-May-20 23:11</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+In a full sentence, we use additional words such as “on” and “at” to help readability. 
+
+<NoExample>
+  This bill of materials was edited 19:22 Nov 4, 2021.
+</NoExample>
+<YesExample>
+  This bill of materials was edited on November 4th, 2021 at 19:22.
+</YesExample>
+
+## Ranges
+When listing a date or time range, the beginning date/time and ending date/time are seperated by the word “to”. This is to avoid confusion with the dashes from the standalone date formating. 
+
+Standalone:
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>2021-Oct-19 - 2021-Oct-21</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>2021-Oct-19 to 2021-Oct-21</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+<Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
+  <Box>
+    <Text>
+      <NoExample>8:00 - 16:00</NoExample>
+    </Text>
+  </Box>
+  <Box>
+    <Text>
+      <YesExample>8:00 to 16:00</YesExample>
+    </Text>
+  </Box>
+</Flex>
+
+In a sentence:
+
+<NoExample>
+  Nulogy xChange will run October 19th, 2021 - October 21st, 2021.
+</NoExample>
+<YesExample>
+  Nulogy xChange will run from October 19th, 2021 to October 21st, 2021.
+</YesExample>
+
+<NoExample>
+  Nulogy’s vision retreat will be from 9:00 AM - 10:00 PM on January 20th, 2022. 
+</NoExample>
+<YesExample>
+  Nulogy’s vision retreat will be held on January 20th, 2022 from 9:00 AM to 10:00 PM.
+</YesExample>
+
+## Translations
+Date and time formatting does not change for differing languages or locales, as they are formatted specifically to the international standard. This is purposeful to reduce complexity internally and for users with sites in multiple countries.
+
+When translating, be sure that the month is written or abbreviated in the correct language. See the Yale Catalogue for accepted month abbreviaitons in other Latin alphabet languages. Note that given Nulogy’s default date formatting, the month’s ending appreviation period (.) is dropped.
