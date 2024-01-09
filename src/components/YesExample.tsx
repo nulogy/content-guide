@@ -9,18 +9,18 @@ export const InlineBox = styled(Box)`
 `;
 
 export default function YesExample(props: any) {
-	return (
-		<InlineBox
-			maxWidth={COPY_WIDTH}
-			m="0 auto"
-			mb="x2"
-			fontStyle="italic"
-			{...props}
-		>
-			<Box display="inline" position="relative" top="half">
-				<Icon icon="check" color="green" mr="x2" />
-			</Box>
-			{props.children}
-		</InlineBox>
-	);
+  return (
+    <InlineBox
+      maxWidth={COPY_WIDTH}
+      m="0 auto"
+      mb="x2"
+      fontStyle="italic"
+      {...props}
+    >
+      <Box display="inline" position="relative" top="half">
+        <Icon icon="check" color="green" mr="x2" />
+      </Box>
+      {props.children}
+    </InlineBox>
+  );
 }

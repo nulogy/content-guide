@@ -17,112 +17,112 @@ import UseActiveVoice from "./pages/writing-for-translation/use-active-voice.mdx
 import UsePositiveVoice from "./pages/writing-for-translation/use-positive-voice.mdx";
 
 const routes = [
-	{
-		name: "Voice and tone",
-		links: [
-			{
-				name: "Overview",
-				title: "Voice and tone",
-				Component: VoiceAndTone,
-				path: "/voice-and-tone/overview",
-			},
-			{
-				Component: Voice,
-				name: "Voice",
-				path: "/voice-and-tone/voice",
-			},
-			{
-				Component: Tone,
-				name: "Tone",
-				path: "/voice-and-tone/tone",
-			},
-		],
-	},
-	{
-		name: "Grammar and mechanics",
-		links: [
-			{
-				Component: Tenses,
-				name: "Tenses",
-				path: "/grammar-and-mechanics/tenses",
-			},
-			{
-				name: "Capitalization",
-				Component: Capitalization,
+  {
+    name: "Voice and tone",
+    links: [
+      {
+        name: "Overview",
+        title: "Voice and tone",
+        Component: VoiceAndTone,
+        path: "/voice-and-tone/overview",
+      },
+      {
+        Component: Voice,
+        name: "Voice",
+        path: "/voice-and-tone/voice",
+      },
+      {
+        Component: Tone,
+        name: "Tone",
+        path: "/voice-and-tone/tone",
+      },
+    ],
+  },
+  {
+    name: "Grammar and mechanics",
+    links: [
+      {
+        Component: Tenses,
+        name: "Tenses",
+        path: "/grammar-and-mechanics/tenses",
+      },
+      {
+        name: "Capitalization",
+        Component: Capitalization,
 
-				path: "/grammar-and-mechanics/capitalization",
-			},
-			{
-				Component: Headings,
-				name: "Headings",
-				path: "/grammar-and-mechanics/headings",
-			},
-			{
-				Component: Lists,
-				name: "Lists",
-				path: "/grammar-and-mechanics/lists",
-			},
-			{
-				Component: Numbers,
-				name: "Numbers",
-				path: "/grammar-and-mechanics/numbers",
-			},
-			{
-				Component: ContractionsAndAbbreviations,
-				name: "Contractions and abbreviations",
-				path: "/grammar-and-mechanics/contractions-and-abbreviations",
-			},
-			{
-				Component: Symbols,
-				name: "Symbols",
-				path: "/grammar-and-mechanics/symbols",
-			},
-			{
-				Component: DatesAndTimes,
-				name: "Dates and times",
-				path: "/grammar-and-mechanics/dates-and-times",
-			},
-			{
-				Component: WebElements,
-				name: "Web elements",
-				path: "/grammar-and-mechanics/web-elements",
-			},
-		],
-	},
-	{
-		name: "Writing for translation",
-		links: [
-			{
-				Component: WritingForTranslation,
-				name: "Overview",
-				title: "Writing for translation",
-				path: "/writing-for-translation/overview",
-			},
-			{
-				Component: BeConcise,
-				name: "Be concise",
-				path: "/writing-for-translation/be-concise",
-			},
-			{
-				name: "Be clear",
-				Component: BeClear,
+        path: "/grammar-and-mechanics/capitalization",
+      },
+      {
+        Component: Headings,
+        name: "Headings",
+        path: "/grammar-and-mechanics/headings",
+      },
+      {
+        Component: Lists,
+        name: "Lists",
+        path: "/grammar-and-mechanics/lists",
+      },
+      {
+        Component: Numbers,
+        name: "Numbers",
+        path: "/grammar-and-mechanics/numbers",
+      },
+      {
+        Component: ContractionsAndAbbreviations,
+        name: "Contractions and abbreviations",
+        path: "/grammar-and-mechanics/contractions-and-abbreviations",
+      },
+      {
+        Component: Symbols,
+        name: "Symbols",
+        path: "/grammar-and-mechanics/symbols",
+      },
+      {
+        Component: DatesAndTimes,
+        name: "Dates and times",
+        path: "/grammar-and-mechanics/dates-and-times",
+      },
+      {
+        Component: WebElements,
+        name: "Web elements",
+        path: "/grammar-and-mechanics/web-elements",
+      },
+    ],
+  },
+  {
+    name: "Writing for translation",
+    links: [
+      {
+        Component: WritingForTranslation,
+        name: "Overview",
+        title: "Writing for translation",
+        path: "/writing-for-translation/overview",
+      },
+      {
+        Component: BeConcise,
+        name: "Be concise",
+        path: "/writing-for-translation/be-concise",
+      },
+      {
+        name: "Be clear",
+        Component: BeClear,
 
-				path: "/writing-for-translation/be-clear",
-			},
-			{
-				name: "Use active voice",
-				Component: UseActiveVoice,
+        path: "/writing-for-translation/be-clear",
+      },
+      {
+        name: "Use active voice",
+        Component: UseActiveVoice,
 
-				path: "/writing-for-translation/use-active-voice",
-			},
-			{
-				name: "Use positive voice",
-				Component: UsePositiveVoice,
+        path: "/writing-for-translation/use-active-voice",
+      },
+      {
+        name: "Use positive voice",
+        Component: UsePositiveVoice,
 
-				path: "/writing-for-translation/use-positive-voice",
-			},
-		],
-	},
+        path: "/writing-for-translation/use-positive-voice",
+      },
+    ],
+  },
 ];
 
 export default routes;

@@ -20,9 +20,9 @@ http://content.nulogy.design
 },
 ```
 
-## Pull request workflow 
+## Pull request workflow
 
-We use Pull Requests for merging code into our codebase. Open up a new one if you'd like to suggest an addition, and send it to someone else to review. After a review, feel free to merge the PR. 
+We use Pull Requests for merging code into our codebase. Open up a new one if you'd like to suggest an addition, and send it to someone else to review. After a review, feel free to merge the PR.
 
 ## Deploying
 

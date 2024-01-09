@@ -5,16 +5,16 @@ import PageNotFound from "./pages/404";
 import routes from "./routes";
 
 export default createHashRouter([
-	{
-		path: "/",
-		element: <Layout />,
-		errorElement: <PageNotFound />,
-		children: [
-			{
-				Component: Index,
-				path: "/",
-			},
-			...routes.flatMap((route) => route.links),
-		],
-	},
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <PageNotFound />,
+    children: [
+      {
+        Component: Index,
+        path: "/",
+      },
+      ...routes.flatMap((route) => route.links),
+    ],
+  },
 ]);
