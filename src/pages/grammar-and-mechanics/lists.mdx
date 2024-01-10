@@ -1,5 +1,5 @@
 import { Box, Flex, List, ListItem, Text } from "@nulogy/components";
-import { COPY_WIDTH } from "../../components/CONSTANTS.js";
+import { COPY_WIDTH } from "../../components/CONSTANTS.ts";
 
 # Lists
 
@@ -19,10 +19,9 @@ Lists can be either ordered or unordered. Ordered lists (numbered points 1, 2, 3
   <Box>
     <YesExample>
       <Text fontSize="small" mt="x2">
-        To assign pallets through item locator:
+        To assign pallets through item locator:{" "}
       </Text>
-      <List fontSize="small" listStyle="order">
-        <ListItem>To assign pallets through item locator:</ListItem>
+      <List marginTop="x2" fontSize="small" listStyle="order">
         <ListItem>Choose a work order.</ListItem>
         <ListItem>Review pallets to be assigned.</ListItem>
         <ListItem>Click the "assign" button</ListItem>

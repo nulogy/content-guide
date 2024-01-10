@@ -1,57 +1,57 @@
-import React, { useState } from "react";
 import { ApplicationFrame, Box } from "@nulogy/components";
 import { createGlobalStyle } from "styled-components";
-import Navigation from "./Navigation";
-import Transition from "./Transition";
-import MenuButton from "./MenuButton";
-import PageNavigation from "./PageNavigation";
-import Helmet from "./Helmet";
+import Transition from "./components/Transition";
+import PageNavigation from "./components/PageNavigation";
+import Navigation from "./components/Navigation";
+import MenuButton from "./components/MenuButton";
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 const ForceThingsToBeInline = createGlobalStyle`
   .inline {display: inline}
 `;
 
-const Layout = ({ children, location, noPadding }) => {
+export default function Layout() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <ApplicationFrame overflow={isOpen ? "hidden" : "auto"}>
-      <Helmet location={location} />
+    <ApplicationFrame overflow="auto">
       <ForceThingsToBeInline />
       <Box display={{ medium: "flex" }} mb="x6">
         <Box
           width={{ medium: "calc(100% - 340px)" }}
           marginLeft={{ medium: "340px" }}
         >
-          <Transition location={location}>
+          <Transition>
             <Box
               as="main"
-              paddingTop={noPadding ? null : "x6"}
-              paddingX={noPadding ? null : { extraSmall: "x6", medium: "x8" }}
+              paddingTop="x6"
+              paddingX={{ extraSmall: "x6", medium: "x8" }}
             >
-              <Box mb="x6">{children}</Box>
-              <PageNavigation location={location} />
+              <Box mb="x6">
+                <Outlet />
+              </Box>
+              <PageNavigation />
             </Box>
           </Transition>
         </Box>
         <Box
           as="aside"
-          position="fixed"
           top={isOpen && "0"}
+          opacity={{ extraSmall: isOpen ? "1" : "0", medium: "1" }}
+          position="fixed"
           height="100%"
           overflow="auto"
           width={{ extraSmall: "100%", medium: "340px" }}
           px="x8"
           py="x8"
-          opacity={{ extraSmall: isOpen ? "1" : "0", medium: "1" }}
           transition="opacity 0.2s linear"
           bg="darkBlue"
         >
-          <Navigation location={location} />
+          <Navigation />
         </Box>
         <MenuButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
       </Box>
     </ApplicationFrame>
   );
-};
-
-export default Layout;
+}

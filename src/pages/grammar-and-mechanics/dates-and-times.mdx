@@ -1,9 +1,10 @@
 import { Flex, Box, Text } from "@nulogy/components";
-import { COPY_WIDTH } from "../../components/CONSTANTS.js";
+import { COPY_WIDTH } from "../../components/CONSTANTS.ts";
 
 # Dates and times
 
 ## Dates
+
 Formatting dates and times can be tricky because the standards differ from country to country. Nulogy is a company that services customers from around the world, so we need to ensure that the dates we list in our softwares are consistent and recognizable.
 
 The ISO (International Organization for Standardization) states that the international standard is YYYY-MM-DD. This standard is not adopted in every single country around the world, but it does offer us the safest route to ensure that the dates listed in our applications are easy to read.
@@ -57,7 +58,7 @@ Given that the ISO date format is not fully adopted worldwide, Nulogy goes a ste
   </Box>
 </Flex>
 
-For example, November 4th, 2021 would read as 2021-Nov-04. July 28th, 2025 would read as 2025-Jul-28. 
+For example, November 4th, 2021 would read as 2021-Nov-04. July 28th, 2025 would read as 2025-Jul-28.
 
 <Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
   <Box>
@@ -75,12 +76,16 @@ For example, November 4th, 2021 would read as 2021-Nov-04. July 28th, 2025 would
 Dates appearing in a sentence are one of two exceptions to this formatting rule. They are written out in full to ensure our overall voice remains professional and understandable. Month abbreviations are not used.
 
 <NoExample>Join us for Nulogy xChange, beginning 2021-Oct-19.</NoExample>
-<YesExample>Join us for Nulogy xChange, beginning on October 19th, 2021.</YesExample>
+<YesExample>
+  Join us for Nulogy xChange, beginning on October 19th, 2021.
+</YesExample>
 
 ## Expiry Dates
+
 Expiry dates are another exception to the date formatting rule. These standards are often set by brands or suppliers, requiring customization on the part of the user. As such, expiry date formats can be configured by the user in their settings.
 
 ## Times
+
 The ISO standard for representing time is HH:MM:SS (hour:minute:second). This is a format that is recognized internationally. Where countries differ is on the use of the 12 hour clock or the 24 hour clock. English speaking countries tend to lean towards the 12 hour clock, but have an understanding of the 24 hour clock. This is why Nulogy adopts the 24 hour clock as the standard. Our default formatting drops the use of the seconds from the ISO formatting, as that information does not add value to our customers in most cases. However, they can be added in situations that benefit the user.
 
 <Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
@@ -140,6 +145,7 @@ If a time zone is required, the three letter abbreviation is added after the tim
 </Flex>
 
 ## Dates and times
+
 When a date and time are listed together, we list the date first, followed by the time.
 
 <Flex justifyContent="space-between" maxWidth={COPY_WIDTH} m="0 auto" mb="x4">
@@ -155,17 +161,19 @@ When a date and time are listed together, we list the date first, followed by th
   </Box>
 </Flex>
 
-In a full sentence, we use additional words such as “on” and “at” to help readability. 
+In a full sentence, we use additional words such as “on” and “at” to help readability.
 
 <NoExample>
   This bill of materials was edited by Jenna Newton at 19:22 Nov 4, 2021.
 </NoExample>
 <YesExample>
-  This bill of materials was edited by Jenna Newton on November 4th, 2021 at 19:22.
+  This bill of materials was edited by Jenna Newton on November 4th, 2021 at
+  19:22.
 </YesExample>
 
 ## Ranges
-When listing a date or time range, the beginning date/time and ending date/time are seperated by the word “to”. This is to avoid confusion with the dashes from the standalone date formating. 
+
+When listing a date or time range, the beginning date/time and ending date/time are seperated by the word “to”. This is to avoid confusion with the dashes from the standalone date formating.
 
 Standalone:
 
@@ -205,13 +213,15 @@ In a sentence:
 </YesExample>
 
 <NoExample>
-  Nulogy’s vision retreat will be from 9:00 AM - 10:00 PM on January 20th, 2022. 
+  Nulogy’s vision retreat will be from 9:00 AM - 10:00 PM on January 20th, 2022.
 </NoExample>
 <YesExample>
-  Nulogy’s vision retreat will be held on January 20th, 2022 from 9:00 AM to 10:00 PM.
+  Nulogy’s vision retreat will be held on January 20th, 2022 from 9:00 AM to
+  10:00 PM.
 </YesExample>
 
 ## Translations
+
 Date and time formatting does not change for differing languages or locales, as they are formatted specifically to the international standard. This is purposeful to reduce complexity internally and for users with sites in multiple countries.
 
 When translating, be sure that the month is written or abbreviated in the correct language. See the <a href="https://web.library.yale.edu/cataloging/months">Yale Catalogue</a> for accepted month abbreviaitons in other Latin alphabet languages. Note that given Nulogy’s default date formatting, the month’s ending appreviation period (.) is dropped.

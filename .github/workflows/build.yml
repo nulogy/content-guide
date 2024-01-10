@@ -1,4 +1,4 @@
-name: Gatsby Test
+name: Build
 
 on: pull_request
 
@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: yarn
-      - run: yarn build
+      - run: yarn run build

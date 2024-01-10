@@ -1,8 +1,7 @@
-import React from "react";
 import { AnimatedBox, Box } from "@nulogy/components";
 import styled from "styled-components";
 
-const Button = styled(Box)(({ isOpen, theme }) => ({
+const Button = styled(Box)(({ theme }) => ({
   border: "none",
   background: "none",
   position: "absolute",
@@ -12,7 +11,13 @@ const Button = styled(Box)(({ isOpen, theme }) => ({
   lineHeight: 0,
 }));
 
-const MenuButton = ({ isOpen, onClick }) => {
+const MenuButton = ({
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => {
   const variant = isOpen ? "opened" : "closed";
   const top = {
     closed: {
@@ -52,8 +57,7 @@ const MenuButton = ({ isOpen, onClick }) => {
   };
   return (
     <Button
-      as="button"
-      isOpen={isOpen}
+      role="button"
       display={{ extraSmall: "block", medium: "none" }}
       onClick={onClick}
       aria-label={isOpen ? "close" : "open"}
