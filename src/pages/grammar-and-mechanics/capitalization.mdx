@@ -5,9 +5,9 @@ import CapitalizationCheatSheet from "./docs/Capitalization-cheat-sheet.pdf";
 
 In general, we always use sentence case. Sentence case is when the first letter of the first word of the phrase is capitalized and each word after is lowercase.
 
-For a comprehensive list of rules and examples refer to the <Link href={CapitalizationCheatSheet}>capitalization cheatsheet</Link>
+For a comprehensive list of rules and examples please refer to the <Link href={CapitalizationCheatSheet}>capitalization cheatsheet</Link>.
 
-Some general rules:
+On a high level these are are some general rules:
 
 ## Headings
 
@@ -27,21 +27,46 @@ Use title case for the names of our products
   The Ecosystem Solution allows brands insights into the production process.
 </YesExample>
 
-## Tools and functions
+## Team names
 
-Tools and functions should be lowercase, unless they are beginning a sentence or header.
+Use title case for the names of our or customers' teams
+
+<NoExample>
+  Someone from professional services will contact you.
+</NoExample>
+<YesExample>
+  Professional Services team will contact you.
+</YesExample>
+<YesExample>
+  Someone from Professional Services will contact you.
+</YesExample>
+
+## Tools
+
+Tools should be lowercase, unless they are beginning a sentence or header.
 
 <NoExample>Find pallets thorugh Item Locator</NoExample>
 <YesExample>Find pallets through item locator.</YesExample>
 
-## Nulogy entities
+## Nulogy objects
 
-Only capitalize an entity within Nulogy that refers to a specific example.
+Only capitalize an unique instances of Nulogy objects that refer to a specific example.
 
-<NoExample>This pick list is for ship order 12345.</NoExample>
-<YesExample mb="x4">This pick list is for Ship Order 12345</YesExample>
+<NoExample>The pick list associated with ship order 12345 ...</NoExample>
+<YesExample mb="x4">The pick list associated with Ship Order 12345 ...</YesExample>
 
-General references to a Nulogy entity should be lowercase.
+General references to a Nulogy object should be lowercase.
 
 <NoExample>Create a Ship Order</NoExample>
 <YesExample>Create a ship order</YesExample>
+
+## Reference to UI elements
+
+Use the same capitalization as in UI when refering to UI elemnts in your documentation, ip-app content, or customer communications.
+
+Add visual emphasis (bold, italic, or “_“) for enhanced understanding.
+
+<NoExample>Click Save Now Button</NoExample>
+<YesExample mb="x4">Click <strong>Save now</strong> button</YesExample>
+
+For a more in exhaustive breakdown of rules please refer to the <Link href={CapitalizationCheatSheet}>capitalization cheatsheet</Link>.
